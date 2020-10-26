@@ -5,55 +5,8 @@ Stylesheet: Global Stylesheet
 *************************************************/
 
 
-
-
-
-
-
-
-
-// Gracious blob
-
-// @keyframes morph-main-glob {
-//     0% {
-//         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-//     }
-//     to {
-//         border-radius: 40% 60%;
-//     }
-// }
-
-// .blob-container {
-// 	background-position: 0 100%;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     height: 80vw;
-//     // max-height: 1000px;
-// 	// max-width: 1000px;
-// 	max-height: 1280px;
-//     max-width: 1280px;
-//     overflow: hidden;
-//     position: absolute;
-//     right: 0;
-//     top: 0;
-// 	height: 80vw;
-//     width: 80vw;
-// }
-
-// .blob-inner {
-// 	animation: morph-main-glob 8s ease-in-out infinite alternate both;
-//     background-color: $secondary-color;
-//     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-//     height: 100%;
-//     position: absolute;
-//     right: -25vw;
-//     top: -25vw;
-//     width: 100%;
-// }
-
-
 /*********************
-CANVAS
+TOPBAR
 *********************/
 
 .top-bar {
@@ -69,7 +22,7 @@ CANVAS
 // TOPBAR EN HERO
 $topbar-height:	126px;
 $topbar-height-mobile: 80px;
-$hero-height: 75vh;
+$hero-height: 100vh;
 $hero-height-mobile: 65vh;
 
 .hero {
@@ -77,6 +30,7 @@ $hero-height-mobile: 65vh;
 	height: $hero-height;
 	z-index: 2;
 	position: relative;
+	overflow: hidden;
 
 	@media screen and (max-width: 640px) {
 		height: $hero-height-mobile !important;
@@ -104,13 +58,69 @@ $hero-height-mobile: 65vh;
 }
 
 .on-top {
-	position: absolute;
-	z-index: 3;
+	position: relative;
+	z-index: 14;
+	.menu a {
+		color: $secondary-color;
+	}
 
 	.top-bar {
 		margin-bottom: -$topbar-height;
 	}
+
+	.hamburger-inner, 
+	.hamburger-inner:after, 
+	.hamburger-inner:before {
+		background-color: $secondary-color;
+	}
+	[aria-expanded="true"] {
+		.hamburger-inner, 
+		.hamburger-inner:after, 
+		.hamburger-inner:before {
+			background-color: $primary-color;
+		}	
+	}
 }
+
+.hamburger-container {
+	position: relative;
+	z-index: 15;
+}
+
+.full-canvas {
+	height: 100vh;
+}
+
+.social {
+	svg {
+		width: 40px;
+		height: auto;
+		path {
+			fill: $primary-color;
+		}
+	}
+}
+
+.menu a {
+	font-weight: 800;
+}
+
+.active a {
+	text-decoration: underline;
+}
+
+
+
+.vertical {
+	a {
+		font-size: 40px;
+		padding-left: 0;
+
+	}
+}
+
+
+
 
 
 // gsap SVG
@@ -120,6 +130,8 @@ $hero-height-mobile: 65vh;
 	width: 100%;
 	height: $hero-height;
 	background-color: $primary-color;
+	top: 0;
+	z-index: -1;
 
 	@media screen and (max-width: 640px) {
 		height: $hero-height-mobile !important;
@@ -132,7 +144,11 @@ $hero-height-mobile: 65vh;
 	
 	.display {
 		width: auto;
-		height: inherit
+		height: inherit;
+
+		@media screen and (max-width: 640px) {
+			width: 95vw;
+		}
 	}
 	
 	svg {
@@ -256,7 +272,7 @@ IMG GRID
 			z-index: 2;
 		}
 
-		h3, p, span {
+		h3, h4, p, span {
 			color: $white;
 		}
 	}
@@ -331,9 +347,6 @@ ASPECT RATIOS
 
 
 
-
-
-
 .circle-cta {
 	margin-left: auto;
 	margin-right: auto;
@@ -359,38 +372,34 @@ ASPECT RATIOS
 
 
 
+.content {
+	p a {
+		position: relative;
+		text-decoration: none;
 
-
-
-
-u {
-	position: relative;
-	text-decoration: none;
-	&:after {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		left: -5px;
-		width: calc(100% + 10px);
-		height: 8px;
-		z-index: -1;
-		background-color: #ffd6cd;
-		border-radius: 8px;
-		transition: all .2s ease-in-out;
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: -5px;
+			width: calc(100% + 10px);
+			height: 8px;
+			z-index: -1;
+			background-color: #ffd6cd;
+			border-radius: 8px;
+			transition: all .2s ease-in-out;
+		}
 	}
-}
 
-
-
-li {
-	list-style-type: none;
-	background-image: url("../images/arrow.svg");
-    background-repeat: no-repeat;
-    background-position: -22px 5px;
-    background-size: auto 14px;
-    line-height: 1;
-	padding: 0 0 20px 35px;
-	// color: $secondary-color;
+	li {
+		list-style-type: none;
+		background-image: url("../images/arrow.svg");
+		background-repeat: no-repeat;
+		background-position: -22px 5px;
+		background-size: auto 14px;
+		line-height: 1;
+		padding: 0 0 20px 35px;
+	}
 }
 
 
@@ -496,9 +505,68 @@ LOGO
 /*********************
 CASES 
 *********************/
+
+$img-width: 100px;
+$img-height: 100px;
+
 .next-prev-cases {
 	border-top: 1px solid $light-gray;
+
+	.text-left img {
+		margin-right: 40px;
+	}
+
+	.text-right img {
+		margin-left: 40px;
+	}
+
+	.container {
+		display: flex;
+
+		flex-direction: row;
+		align-items: center;
+
+		.details {
+			flex: 1 auto;
+		}
+		
+		img {
+			// flex: 0 1 auto;
+			width: $img-width;
+			height: $img-height;
+			border-radius: $global-radius;
+
+			@media screen and (max-width: 640px) {
+				display: none;
+			}
+		}
+	}
 }
+
+
+
+// .card {
+// 	align-items: center;
+// 	border: 0;
+// 	flex-direction: row;
+// 	padding: 0;
+
+// 	.card-section {
+// 		flex: 1 auto;
+// 		padding: 0;
+// 	}
+
+// 	img {
+// 		width: $img-width;
+// 		height: $img-height;
+// 	}
+// }
+
+
+
+
+
+
 
 .case-hero {
 	figure {
@@ -574,7 +642,7 @@ PROFILE
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		@media screen and (min-width: 640px) {
+		@media screen and (min-width: 1024px) {
 			padding-left: 20px;
 		}
 	}	

@@ -109,23 +109,39 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+			
 			<section class="next-prev-cases pt-s pb-s">
 				<div class="grid-container">
 					<div class="grid-x">
-						<div class="cell small-6">
+						<div class="cell small-6 text-left">
 							<?php
 							$prev_post = get_previous_post();
 							if ( is_a( $prev_post , 'WP_Post' ) ) : ?>
-								<small>Vorige case</small> <br/>
-								<a class="h3" href="<?php echo get_permalink( $prev_post->ID ); ?>"><?php echo get_the_title( $prev_post->ID ); ?></a>
+								<a href="<?php echo get_permalink( $prev_post->ID ); ?>">
+									<div class="container">
+										<?php echo get_the_post_thumbnail( $prev_post->ID, 'thumbnail' ); ?>
+
+										<div class="details">
+											<small>Vorige case</small> <br/>
+											<h4><?php echo get_the_title( $prev_post->ID ); ?></h4>
+										</div>
+									</div>
+								</a>	
 							<?php endif; ?>
 						</div>
 						<div class="cell small-6 text-right">
 							<?php
 							$next_post = get_next_post();
 							if ( is_a( $next_post , 'WP_Post' ) ) : ?>
-								<small>Volgende case</small> <br/>
-								<a class="h3" href="<?php echo get_permalink( $next_post->ID ); ?>"><?php echo get_the_title( $next_post->ID ); ?></a>
+								<a href="<?php echo get_permalink( $next_post->ID ); ?>">
+									<div class="container">
+										<div class="details">
+											<small>Volgende case</small> <br/>
+											<h4><?php echo get_the_title( $next_post->ID ); ?></h4>
+										</div>
+										<?php echo get_the_post_thumbnail( $next_post->ID, 'thumbnail' ); ?>
+									</div>
+								</a>
 							<?php endif; ?>
 						</div>
 					</div>
@@ -137,64 +153,7 @@ get_header(); ?>
 			<?php get_template_part('parts/layouts/layout', 'cta'); ?>
 			<!-- end #content -->
 
-			<div class="grid-container fluid mt-m">
-				<div class="grid-x">
-					<div class="cell cta-grid-header">
-						<h2>Meer cases</h2>
-					</div>
-				</div>
-			</div>
-
-
-
-
-
-
-			<!-- start #cases-slider -->
-			<div class="grid-container fluid mt-m">
-				<div class="swiper-container pb-s">
-					<div class="swiper-wrapper">
-
-						<?php
-							$args = array(
-								'post_type' => 'cases',
-								'posts_per_page' => -1,
-								'post__not_in'           => array(get_the_ID())
-
-							);
-							$loop = new WP_Query($args);
-
-							while ($loop->have_posts()) : $loop->the_post();
-
-							$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-
-							?>
-
-							<div class="swiper-slide img-grid">
-								<a href="<?php the_permalink() ?>">
-									
-									<figure>
-										<div class="overlay"></div>
-										<?php the_post_thumbnail('large-grid-img'); ?>
-									</figure>
-
-									<div class="details-container">
-										<span><small><?php the_field('case_client'); ?></small></span>
-										<?php the_title( '<h3  class="h2">', '</h3>' ); ?>
-									</div>
-								</a>
-							</div>
-
-							<?php endwhile; ?>
-
-						<?php wp_reset_query(); ?>
-					</div>
-					<div class="swiper-button-next"></div>
-    				<div class="swiper-button-prev"></div>
-				</div>	
-			</div>
-			<!-- end #cases-slider -->
-
+			
 
 		<?php endwhile; else : ?>
 	

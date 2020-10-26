@@ -52,22 +52,32 @@
 			<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
 			
 			<div class="off-canvas-content" data-off-canvas-content>
-				<!-- <div class="hamburger-container">
-                    <a class="hamburger hamburger--collapse" type="button" aria-label="Menu" data-toggle="off-canvas">
-                        <span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-						</span>
-					</a>
-				</div> -->
-
+				
 				<?php if( is_page_template( 'template-home.php' ) ) { ?>
 
 					<header class="header on-top" role="banner">
 
+					<div class="hide-for-large hamburger-container">
+						<a class="hamburger hamburger--collapse" type="button" aria-label="Menu" data-toggle="off-canvas">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</a>
+					</div>
+
 				<?php } elseif ( ( is_page_template( 'template-contact.php' )
+							|| is_page_template('template-general.php')
 							|| is_singular('cases')) ) { ?>
 							
 					<header class="header" role="banner">
+
+					<div class="hide-for-large hamburger-container">
+						<a class="hamburger hamburger--collapse" type="button" aria-label="Menu" data-toggle="off-canvas">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</a>
+					</div>
 
 				<?php } ?>
 							

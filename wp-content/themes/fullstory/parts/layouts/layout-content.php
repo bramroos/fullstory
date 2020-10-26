@@ -135,26 +135,61 @@
 
 
 
-            <?php elseif( get_row_layout() == 'image_text_duo' ): ?>
-                <div class="grid-container" data-aos="fade-up">
-                    <div class="grid-x grid-margin-x align-center align-middle mb-l <?php if( get_sub_field('row_reverse') ) { echo 'large-flex-dir-row-reverse'; } ?>
+        <?php elseif( get_row_layout() == 'image_text_duo' ): ?>
+            <div class="grid-container" data-aos="fade-up">
+                <div class="grid-x grid-margin-x align-center align-middle mb-l <?php if( get_sub_field('row_reverse') ) { echo 'large-flex-dir-row-reverse'; } ?>
 ">
-                        <div class="cell medium-5">
-                            <?php the_sub_field('text_duo'); ?>
-                        </div>
-                        <div class="cell medium-7 text-center">
+                    <div class="cell medium-5">
+                        <?php the_sub_field('text_duo'); ?>
+                    </div>
+                    <div class="cell medium-7 text-center">
+                        <?php 
+                            $image = get_sub_field('image_duo');
+                            $size = 'large';
+                            if( $image ) {
+                                echo '<figure>';
+                                echo wp_get_attachment_image( $image, $size );
+                                echo '</figure>';
+                            } 
+                        ?>
+                    </div>
+                </div>
+            </div>
+
+        
+        <?php elseif( get_row_layout() == 'sticky_image' ): ?>
+            <div class="grid-container" >
+                <div class="grid-x grid-margin-x">
+
+                    <div class="cell medium-6" data-sticky-container>
+                        <div class="sticky" data-sticky data-anchor="foo">
                             <?php 
-                                $image = get_sub_field('image_duo');
+                                $image = get_sub_field('image_sticky');
                                 $size = 'large';
                                 if( $image ) {
-                                    echo '<figure>';
+                                    echo '<figure data-aos="fade-up">';
                                     echo wp_get_attachment_image( $image, $size );
                                     echo '</figure>';
                                 } 
                             ?>
                         </div>
                     </div>
+                
+                    <div class="cell medium-6" id="foo" data-aos="fade-up">
+                        <div class="grid-x">
+
+                            <?php if( have_rows('content_block_sticky') ): ?>
+                                <?php while( have_rows('content_block_sticky') ): the_row(); ?>
+                                    <div class="cell mb-l">
+                                        <?php the_sub_field('text_block'); ?>
+                                    </div>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+
+                        </div>
+                    </div>
                 </div>
+            </div>
 
 
 

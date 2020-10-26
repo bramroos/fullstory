@@ -11,9 +11,9 @@ get_header(); ?>
 			
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-				<!-- start #content -->
+				<!-- start #hero -->
 				<?php get_template_part('parts/layouts/layout', 'hero-fancy'); ?>
-				<!-- end #content -->
+				<!-- end #hero -->
 				<div class="mb-s"></div>
 				
 				<?php

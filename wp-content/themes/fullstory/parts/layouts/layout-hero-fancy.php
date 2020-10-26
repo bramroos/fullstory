@@ -1,4 +1,12 @@
-<div class="svg-outer">
+<div class="hero">
+    <div class="grid-container hero-inner">
+        <div class="grid-x align-middle hero-content">
+            <div class="cell medium-8">
+                <h1 class=""><?php the_field('hero_title'); ?></h1>
+            </div>
+        </div>
+    </div>	
+    <div class="svg-outer">
         <svg class="display" viewBox="0 0 212 208">
             <g clip-path="url(#mask)">
                 <rect width="212" height="208" fill="#fff"></rect>
@@ -22,65 +30,4 @@
             <path id="y" d="M199.6 14.2l-66.9 112.2v70c0 4.5-2.5 7-7 7H85.5c-4.5 0-7-2.5-7-7v-69.7L12.4 14.2c-2.8-5.1-.8-8.4 4.8-8.4h49.5c3.9 0 6.5 1.7 8.2 5.1l32.6 63.5 33.2-63.5c1.7-3.4 4.2-5.1 8.2-5.1H195c5.5-.1 7.4 3.3 4.6 8.4z"/>
         </svg>
     </div>
-    <div class="hero">
-    
-    <div class="grid-container hero-inner">
-        <div class="grid-x align-middle hero-content">
-            <div class="cell medium-8">
-                <h1 class=""><?php the_field('hero_title'); ?></h1>
-            </div>
-        </div>
-    </div>	
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/js/gsap/MorphSVGPlugin.min.js"></script>
-
-    <script>
-// Register morph plugin
-gsap.registerPlugin(MorphSVGPlugin)
-
-// Create timeline
-const tl = gsap.timeline({ 
-onComplete: () => tl.restart()
-});
-
-// Default vars
-const $logo = document.getElementById('logo')
-const duration = .6
-const ease = 'expo.out'
-
-// Set timeline
-tl
-.to($logo, { morphSVG: "#f", duration, ease }, '+=2')
-
-.to($logo, { morphSVG: "#u", duration, ease })
-.to($logo, { morphSVG: "#l", duration, ease })
-.to($logo, { morphSVG: "#lr", duration, ease })
-
-.to($logo, { morphSVG: "#s", duration, ease })
-.to($logo, { morphSVG: "#t", duration, ease })
-.to($logo, { morphSVG: "#o", duration, ease })
-.to($logo, { morphSVG: "#r", duration, ease })
-.to($logo, { morphSVG: "#y", duration, ease })
-
-.to($logo, { morphSVG: "#logo", duration, ease })
-</script>
-
-
-                
-
-<!-- Default -->
-<!-- <div class="hero" id="hero-bg">
-    <div class="grid-container hero-inner">
-        <div class="grid-x align-middle hero-content">
-            <div class="cell medium-8">
-                <h1 class=""> -->
-                    <?php 
-                    // the_field('hero_title'); 
-                    ?>
-                    <!-- </h1>
-            </div>
-        </div>
-    </div>	
-</div> -->
