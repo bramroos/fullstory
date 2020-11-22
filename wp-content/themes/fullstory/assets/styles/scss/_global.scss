@@ -247,7 +247,7 @@ IMG GRID
 		}
 
 		img, video {
-			transition: all 1s ease-in-out;
+			transition: all .5s ease-out;
 		}
 
 		.overlay {
@@ -283,7 +283,7 @@ IMG GRID
 		}
 	
 		img, video {
-			transform: scale(1.1);
+			transform: scale(1.05);
 		}
 	}
 }
