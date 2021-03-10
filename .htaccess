@@ -6,6 +6,7 @@
 # Alle wijzigingen aan de richtlijnen tussen deze markeringen worden overschreven.
 <IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteBase /fullstory/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -16,6 +16,173 @@
                 "id": ""
             },
             "layouts": {
+                "layout_6019b9b330bb6": {
+                    "key": "layout_6019b9b330bb6",
+                    "name": "content_media",
+                    "label": "Content en Media",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6019b9b330bb7",
+                            "label": "Content",
+                            "name": "content_media__content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6019d56c1e7a1",
+                            "label": "Media Type",
+                            "name": "content_media__media_type",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "image": "Afbeelding",
+                                "video": "Video",
+                                "slider": "Slider"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_6019b9b430bb9",
+                            "label": "Row Reverse?",
+                            "name": "content_media__row_rev",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_6019b9b430bb8",
+                            "label": "Afbeelding",
+                            "name": "content_media__img",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6019d56c1e7a1",
+                                        "operator": "==",
+                                        "value": "image"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_6019baa130bba",
+                            "label": "Video",
+                            "name": "content_media__vid",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6019d56c1e7a1",
+                                        "operator": "==",
+                                        "value": "video"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_6019dbd6deace",
+                            "label": "Slider",
+                            "name": "content_media__slider",
+                            "type": "gallery",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6019d56c1e7a1",
+                                        "operator": "==",
+                                        "value": "slider"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "insert": "append",
+                            "library": "all",
+                            "min": "",
+                            "max": "",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_5f7a0ac0786ca": {
                     "key": "layout_5f7a0ac0786ca",
                     "name": "text_column",
@@ -139,74 +306,15 @@
                                 "id": ""
                             },
                             "choices": {
-                                "grid": "In Grid",
                                 "fluid": "Fluid",
-                                "full-width": "Full Width"
+                                "full": "Full Width"
                             },
-                            "allow_null": 0,
+                            "allow_null": 1,
                             "other_choice": 0,
-                            "default_value": "grid",
+                            "default_value": "",
                             "layout": "horizontal",
-                            "return_format": "value",
+                            "return_format": "array",
                             "save_other_choice": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_5f7a3355d9da5": {
-                    "key": "layout_5f7a3355d9da5",
-                    "name": "image_duo",
-                    "label": "Image Duo",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5f7a336fd9da6",
-                            "label": "Image Duo",
-                            "name": "image_duo_one",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        },
-                        {
-                            "key": "field_5f7a33bd84763",
-                            "label": "Image Duo",
-                            "name": "image_duo_two",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
                         }
                     ],
                     "min": "",
@@ -418,7 +526,7 @@
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
@@ -426,5 +534,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1603617411
+    "modified": 1612307534
 }

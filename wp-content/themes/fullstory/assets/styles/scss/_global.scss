@@ -5,6 +5,12 @@ Stylesheet: Global Stylesheet
 *************************************************/
 
 
+
+
+
+
+
+
 /*********************
 TOPBAR
 *********************/
@@ -545,27 +551,6 @@ $img-height: 100px;
 
 
 
-// .card {
-// 	align-items: center;
-// 	border: 0;
-// 	flex-direction: row;
-// 	padding: 0;
-
-// 	.card-section {
-// 		flex: 1 auto;
-// 		padding: 0;
-// 	}
-
-// 	img {
-// 		width: $img-width;
-// 		height: $img-height;
-// 	}
-// }
-
-
-
-
-
 
 
 .case-hero {
@@ -579,12 +564,13 @@ $img-height: 100px;
 	}
 }
 
+
 figure {
 	border-radius: $global-radius;
 	overflow: hidden;
 }
 
-.no-border-radius {
+.full {
 	figure {
 		border-radius: 0;
 	}

@@ -20,10 +20,10 @@ require_once(get_template_directory().'/functions/menu.php');
 require_once(get_template_directory().'/functions/sidebar.php'); 
 
 // Makes WordPress comments suck less
-require_once(get_template_directory().'/functions/comments.php'); 
+// require_once(get_template_directory().'/functions/comments.php'); 
 
 // Replace 'older/newer' post links with numbered navigation
-require_once(get_template_directory().'/functions/page-navi.php'); 
+// require_once(get_template_directory().'/functions/page-navi.php'); 
 
 // Adds support for multiple languages
 require_once(get_template_directory().'/functions/translation/translation.php'); 

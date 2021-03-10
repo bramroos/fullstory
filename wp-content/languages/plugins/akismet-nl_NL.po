@@ -38,7 +38,7 @@ msgstr "Akismet kon deze reactie niet opnieuw controleren maar probeert het auto
 msgid "Comment was caught by %s."
 msgstr "Reactie is opgevangen door %s."
 
-#: class.akismet.php:561
+#: class.akismet.php:569
 msgid "Akismet is not configured. Please enter an API key."
 msgstr "Akismet is niet geconfigureerd. Vul een API-sleutel in."
 
@@ -94,7 +94,7 @@ msgstr "Akismet privacy melding"
 msgid "Privacy"
 msgstr "Privacy"
 
-#: class.akismet.php:1500
+#: class.akismet.php:1516
 msgid "This site uses Akismet to reduce spam. <a href=\"%s\" target=\"_blank\" rel=\"nofollow noopener\">Learn how your comment data is processed</a>."
 msgstr "Deze website gebruikt Akismet om spam te verminderen. <a href=\"%s\" target=\"_blank\" rel=\"nofollow noopener\">Bekijk hoe je reactie-gegevens worden verwerkt</a>."
 
@@ -102,7 +102,7 @@ msgstr "Deze website gebruikt Akismet om spam te verminderen. <a href=\"%s\" tar
 msgid "We collect information about visitors who comment on Sites that use our Akismet anti-spam service. The information we collect depends on how the User sets up Akismet for the Site, but typically includes the commenter's IP address, user agent, referrer, and Site URL (along with other information directly provided by the commenter such as their name, username, email address, and the comment itself)."
 msgstr "We verzamelen informatie over bezoekers die reageren op websites die onze Akismet anti-spam service gebruiken. De informatie die we verzamelen hangt af van hoe de gebruiker Akismet heeft ingesteld voor de site, maar normaliter zit hier het IP adres van de reageerder, user agent, referrer en website URL (met ook andere informatie zoals naam, gebruikersnaam, e-mail adres en deze reactie zelf) bij. "
 
-#: class.akismet.php:236
+#: class.akismet.php:244
 msgid "Comment discarded."
 msgstr "Reactie verwijderd."
 
@@ -231,7 +231,7 @@ msgstr[1] "Akismet heeft %s reacties gecontroleerd."
 msgid "There were no comments to check. Akismet will only check comments awaiting moderation."
 msgstr "Er zijn geen reacties om te controleren. Akismet controleert alleen reacties in afwachting."
 
-#: class.akismet.php:567
+#: class.akismet.php:575
 msgid "Comment not found."
 msgstr "Reactie niet gevonden."
 
@@ -572,11 +572,11 @@ msgstr[1] "Spam geblokkeerd"
 msgid "Past six months"
 msgstr "Afgelopen zes maanden"
 
-#: class.akismet.php:1357
+#: class.akismet.php:1364
 msgid "Please <a href=\"%1$s\">upgrade WordPress</a> to a current version, or <a href=\"%2$s\">downgrade to version 2.4 of the Akismet plugin</a>."
 msgstr "<a href=\"%1$s\">Upgrade WordPress</a> naar de huidige versie of <a href=\"%2$s\">ga terug naar versie 2.4 van de Akismet-plugin</a>."
 
-#: class.akismet.php:1357
+#: class.akismet.php:1364
 msgid "Akismet %s requires WordPress %s or higher."
 msgstr "Akismet %s vereist WordPress %s of nieuwer."
 

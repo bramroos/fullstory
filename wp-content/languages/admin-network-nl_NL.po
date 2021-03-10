@@ -1,15 +1,15 @@
-# Translation of WordPress - 5.5.x - Development - Administration - Network Admin in Dutch
-# This file is distributed under the same license as the WordPress - 5.5.x - Development - Administration - Network Admin package.
+# Translation of WordPress - 5.6.x - Development - Administration - Network Admin in Dutch
+# This file is distributed under the same license as the WordPress - 5.6.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-20 09:57:46+0000\n"
+"PO-Revision-Date: 2020-12-04 18:05:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: nl\n"
-"Project-Id-Version: WordPress - 5.5.x - Development - Administration - Network Admin\n"
+"Project-Id-Version: WordPress - 5.6.x - Development - Administration - Network Admin\n"
 
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:293
 msgctxt "site"
@@ -17,14 +17,14 @@ msgid "Not spam"
 msgstr "Geen spam"
 
 #. translators: %s: Number of themes.
-#: wp-admin/network/themes.php:405
+#: wp-admin/network/themes.php:410
 msgid "%s theme will no longer be auto-updated."
 msgid_plural "%s themes will no longer be auto-updated."
 msgstr[0] "%s thema zal niet langer automatisch geupdate worden."
 msgstr[1] "%s thema's zullen niet langer automatisch geupdate worden. "
 
 #. translators: %s: Number of themes.
-#: wp-admin/network/themes.php:396
+#: wp-admin/network/themes.php:401
 msgid "%s theme will be auto-updated."
 msgid_plural "%s themes will be auto-updated."
 msgstr[0] "%s thema zal automatisch worden geüpdate."
@@ -38,8 +38,8 @@ msgstr "Sorry, je hebt geen toestemming de instelling voor het automatisch updat
 msgid "No themes are currently available."
 msgstr "Er zijn momenteel geen thema's beschikbaar."
 
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:475
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:496
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:477
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:498
 #: wp-admin/includes/class-wp-ms-users-list-table.php:336
 msgid "Y/m/d g:i:s a"
 msgstr "j F Y H:i"
@@ -113,7 +113,7 @@ msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] "Update beschikbaar <span class=\"count\">(%s)</span>"
 msgstr[1] "Updates beschikbaar <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:614
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:616
 msgid "Main"
 msgstr "Hoofd"
 
@@ -138,7 +138,7 @@ msgstr "Je staat op het punt de volgende sites te verwijderen:"
 msgid "User could not be added to this site."
 msgstr "Gebruiker kon niet worden toegevoegd aan deze site."
 
-#: wp-admin/network/site-new.php:287
+#: wp-admin/network/site-new.php:263
 msgid "The username and a link to set the password will be mailed to this email address."
 msgstr "De gebruikersnaam en een link om het wachtwoord in te stellen zullen worden gemaild naar dit e-mailadres."
 
@@ -228,14 +228,9 @@ msgctxt "theme"
 msgid "%1$s by %2$s"
 msgstr "%1$s door %2$s"
 
-#: wp-admin/network/site-new.php:243
+#: wp-admin/network/site-new.php:219
 msgid "Only lowercase letters (a-z), numbers, and hyphens are allowed."
 msgstr "Alleen kleine letters (a-z), cijfers en koppeltekens zijn toegestaan."
-
-#: wp-admin/network/site-new.php:169
-msgctxt "email \"From\" field"
-msgid "Site Admin"
-msgstr "Sitebeheerder"
 
 #. translators: %s: wp-config.php
 #: wp-admin/includes/network.php:540
@@ -412,36 +407,36 @@ msgstr "Thema"
 msgid "No themes found."
 msgstr "Geen thema's gevonden."
 
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:704
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:706
 msgctxt "verb; site"
 msgid "Archive"
 msgstr "Archiveren"
 
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:702
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:704
 msgid "Unarchive"
 msgstr "Dearchiveren"
 
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:478
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:480
 msgid "Never"
 msgstr "Nooit"
 
 #. translators: 1: Site title, 2: Site tagline.
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:451
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:453
 msgid "%1$s &#8211; %2$s"
 msgstr "%1$s &#8211; %2$s"
 
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:363
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:365
 #: wp-admin/network/site-info.php:176
 msgctxt "site"
 msgid "Registered"
 msgstr "Geregistreerd"
 
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:362
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:364
 #: wp-admin/network/site-info.php:180
 msgid "Last Updated"
 msgstr "Laatst bijgewerkt"
 
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:708
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:710
 msgctxt "site"
 msgid "Not Spam"
 msgstr "Geen spam"
@@ -466,7 +461,7 @@ msgid "Deleted"
 msgstr "Verwijderd"
 
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:40
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:710
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:712
 #: wp-admin/network/site-info.php:187
 msgctxt "site"
 msgid "Spam"
@@ -603,21 +598,21 @@ msgid "Warning! Problem updating %1$s. Your server may not be able to connect to
 msgstr "Waarschuwing. Er is een probleem met het bijwerken van %1$s. De server is mogelijk niet in staat om verbinding te maken met de sites die er op draaien. Foutmelding: %2$s"
 
 #. translators: %s: Number of themes.
-#: wp-admin/network/themes.php:387
+#: wp-admin/network/themes.php:392
 msgid "%s theme deleted."
 msgid_plural "%s themes deleted."
 msgstr[0] "%s thema is verwijderd."
 msgstr[1] "%s thema's zijn verwijderd."
 
 #. translators: %s: Number of themes.
-#: wp-admin/network/themes.php:378 wp-admin/network/site-themes.php:204
+#: wp-admin/network/themes.php:383 wp-admin/network/site-themes.php:204
 msgid "%s theme disabled."
 msgid_plural "%s themes disabled."
 msgstr[0] "%s thema uitgeschakeld."
 msgstr[1] "%s thema's uitgeschakeld."
 
 #. translators: %s: Number of themes.
-#: wp-admin/network/themes.php:369 wp-admin/network/site-themes.php:195
+#: wp-admin/network/themes.php:374 wp-admin/network/site-themes.php:195
 msgid "%s theme enabled."
 msgid_plural "%s themes enabled."
 msgstr[0] "%s thema ingeschakeld."
@@ -660,7 +655,7 @@ msgid "New registrations settings"
 msgstr "Nieuwe registratie instellingen"
 
 #. translators: 1: File name (.htaccess or web.config), 2: File path.
-#: wp-admin/includes/network.php:609 wp-admin/includes/network.php:661
+#: wp-admin/includes/network.php:609 wp-admin/includes/network.php:662
 msgid "Add the following to your %1$s file in %2$s, <strong>replacing</strong> other WordPress rules:"
 msgstr "Voeg het volgende toe aan je %1$s bestand in %2$s, en <strong>vervang</strong> daarmee andere WordPress regels:"
 
@@ -737,22 +732,8 @@ msgstr "Dit scherm alleen gebruiken wanneer je WordPress hebt bijgewerkt via Nie
 msgid "Upgrade Network"
 msgstr "Netwerk upgraden"
 
-#. translators: New site notification email. 1: User login, 2: Site URL, 3:
-#. Site title.
-#: wp-admin/network/site-new.php:157
-msgid ""
-"New site created by %1$s\n"
-"\n"
-"Address: %2$s\n"
-"Name: %3$s"
-msgstr ""
-"Nieuwe site gemaakt door %1$s\n"
-"\n"
-"Adres: %2$s\n"
-"Naam: %3$s"
-
 #: wp-admin/includes/network.php:263 wp-admin/includes/network.php:615
-#: wp-admin/includes/network.php:667
+#: wp-admin/includes/network.php:668
 msgid "Subdirectory networks may not be fully compatible with custom wp-content directories."
 msgstr "Netwerken met submappen kunnen niet volledig compatibel zijn met aangepaste wp-content mappen."
 
@@ -800,12 +781,12 @@ msgstr "Gebruiker is al lid van deze site."
 msgid "Site options updated."
 msgstr "Site-opties bijgewerkt."
 
-#: wp-admin/network/site-new.php:201 wp-admin/network/site-new.php:211
+#: wp-admin/network/site-new.php:177 wp-admin/network/site-new.php:187
 msgid "Add New Site"
 msgstr "Nieuwe site toevoegen"
 
 #. translators: 1: Dashboard URL, 2: Network admin edit URL.
-#: wp-admin/network/site-new.php:194
+#: wp-admin/network/site-new.php:170
 msgid "Site added. <a href=\"%1$s\">Visit Dashboard</a> or <a href=\"%2$s\">Edit Site</a>"
 msgstr "Site toegevoegd. <a href=\"%1$s\">Bezoek het Dashboard</a> of <a href=\"%2$s\">bewerk de site </a>"
 
@@ -817,7 +798,7 @@ msgstr "Dit scherm is voor Super Admins om nieuwe sites toe te voegen aan het ne
 msgid "Site info updated."
 msgstr "Site-informatie bijgewerkt."
 
-#: wp-admin/network/themes.php:411
+#: wp-admin/network/themes.php:416
 msgid "You cannot delete a theme while it is active on the main site."
 msgstr "Het is niet mogelijk een thema te verwijderen welke actief is op de hoofdsite."
 
@@ -853,15 +834,15 @@ msgstr "Thema verwijderen"
 msgid "Network enabled themes are not shown on this screen."
 msgstr "Netwerk ingeschakeld thema&#39;s worden niet weergegeven op dit scherm."
 
-#: wp-admin/network/themes.php:409 wp-admin/network/site-themes.php:208
+#: wp-admin/network/themes.php:414 wp-admin/network/site-themes.php:208
 msgid "No theme selected."
 msgstr "Geen thema geselecteerd."
 
-#: wp-admin/network/themes.php:375 wp-admin/network/site-themes.php:201
+#: wp-admin/network/themes.php:380 wp-admin/network/site-themes.php:201
 msgid "Theme disabled."
 msgstr "Thema deactiveren."
 
-#: wp-admin/network/themes.php:366 wp-admin/network/site-themes.php:192
+#: wp-admin/network/themes.php:371 wp-admin/network/site-themes.php:192
 msgid "Theme enabled."
 msgstr "Thema activeren."
 
@@ -934,7 +915,7 @@ msgstr "Thema&#39;s %s"
 msgid "All Sites"
 msgstr "Alle sites"
 
-#: wp-admin/includes/network.php:679
+#: wp-admin/includes/network.php:680
 msgid "Once you complete these steps, your network is enabled and configured. You will have to log in again."
 msgstr "Wanneer je deze stappen hebt afgerond is je netwerk geactiveerd. Je zult hierna opnieuw in moeten loggen."
 
@@ -1039,10 +1020,6 @@ msgstr "Welkom bij de netwerkinstallatie."
 #: wp-admin/includes/network.php:160
 msgid "Error: The network could not be created."
 msgstr "Fout: Het netwerk kon niet gemaakt worden."
-
-#: wp-admin/includes/network.php:148
-msgid "Return to Dashboard"
-msgstr "Terug naar het Dashboard"
 
 #: wp-admin/includes/network.php:142
 msgid "You cannot install a network of sites with your server address."
@@ -1152,7 +1129,7 @@ msgstr "Indien dit proces mislukt om wat voor reden dan ook, zullen gebruikers d
 
 #: wp-admin/network/upgrade.php:24
 msgid "If a version update to core has not happened, clicking this button won&#8217;t affect anything."
-msgstr "Als er geen versie update is gedaan, zal klikken op deze knop geen enkele invloed hebben."
+msgstr "Als er geen versie update aan de core is gedaan, zal klikken op deze knop geen enkele invloed hebben."
 
 #: wp-admin/network/themes.php:300
 msgid "If the network admin disables a theme that is in use, it can still remain selected on that site. If another theme is chosen, the disabled theme will not appear in the site&#8217;s Appearance > Themes screen."
@@ -1364,20 +1341,15 @@ msgstr "Stuur de netwerkbeheerder een e-mailmelding elke keer dat iemand een sit
 msgid "Network Admin Email"
 msgstr "E-mailadres netwerkbeheerder"
 
-#. translators: New site notification email subject. %s: Network title.
-#: wp-admin/network/site-new.php:152
-msgid "[%s] New Site Created"
-msgstr "[%s] Nieuwe site aangemaakt"
-
-#: wp-admin/network/site-new.php:287
+#: wp-admin/network/site-new.php:263
 msgid "A new user will be created if the above email address is not in the database."
 msgstr "Een nieuwe gebruiker wordt aangemaakt als bovenstaande e-mailadres niet voorkomt in de database."
 
-#: wp-admin/network/site-new.php:283
+#: wp-admin/network/site-new.php:259
 msgid "Admin Email"
 msgstr "Beheerder e-mailadres"
 
-#: wp-admin/network/site-new.php:299
+#: wp-admin/network/site-new.php:275
 msgid "Add Site"
 msgstr "Site toevoegen"
 

@@ -46,7 +46,7 @@ function cases() {
 			'capability_type' => 'post',
 			'hierarchical' => false,
 			/* the next one is important, it tells what's enabled in the post editor */
-			'supports' => array( 'title', 'thumbnail', 'excerpt', 'revisions')
+			'supports' => array( 'title', 'thumbnail', 'revisions')
 	 	) /* end of options */
 	); /* end of register post type */
 	
